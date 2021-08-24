@@ -1,0 +1,53 @@
+@media (min-width: 1200px) {
+    .resume {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "name photo"
+            "work about"
+            "work education"
+            "extra skills"
+    }
+}
+
+@media (max-width: 900px) {
+    .resume {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "name photo"
+            "work about"
+            "work education"
+            "extra skills"
+    }
+}
+
+.name {
+    grid-area: name;
+}
+
+.photo {
+    grid-area: photo;
+}
+
+.about {
+    grid-area: about;
+}
+
+.work {
+    grid-area: work;
+}
+
+.education {
+    grid-area: education;
+}
+
+.skills {
+    grid-area: skills;
+}
+
+.extra {
+    grid-area: extra;
+}
